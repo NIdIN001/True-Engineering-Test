@@ -24,6 +24,6 @@
 - [4 bytes] Graph Structure Size
 - [4 bytes] Graph Id
 - [4 bytes] Graph Nodes Count
-- {[4 bytes] Id, [4 bytes] value} — Repeated <Nodes count> times
+- {[4 bytes] Id, [4 bytes] value} — Repeated Nodes count times
 - [4 bytes] Graph Edges Count
-- {[4 bytes] edgeFrom, [4 bytes] edgeTo} — Repeated <Edges count> times
+- {[4 bytes] edgeFrom, [4 bytes] edgeTo} — Repeated Edges count times
