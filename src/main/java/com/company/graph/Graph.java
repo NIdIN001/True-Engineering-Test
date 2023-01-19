@@ -4,9 +4,9 @@ import java.util.Set;
 
 public class Graph {
 
-    private Integer id;
+    private final Integer id;
 
-    private Set<GraphNode> nodes;
+    private final Set<GraphNode> nodes;
 
     public Graph(Integer id, Set<GraphNode> nodeSet) {
         this.id = id;

@@ -5,11 +5,11 @@ import java.util.Set;
 
 public class GraphNode {
 
-    private Integer id;
+    private final Integer id;
 
-    private Integer value;
+    private final Integer value;
 
-    private Set<GraphNode> neighbours;
+    private final Set<GraphNode> neighbours;
 
     public GraphNode(Integer id, Integer value) {
         this.id = id;
@@ -23,6 +23,10 @@ public class GraphNode {
 
     public Integer getValue() {
         return value;
+    }
+
+    public void addNeighbour(GraphNode neighbour) {
+        neighbours.add(neighbour);
     }
 
     public Set<GraphNode> getNeighbours() {

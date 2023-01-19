@@ -18,11 +18,11 @@ public class Application {
         var graphNode2 = new GraphNode(2, 2);
         var graphNode3 = new GraphNode(3, 3);
 
-        graphNode1.getNeighbours().add(graphNode2);
-        graphNode1.getNeighbours().add(graphNode3);
-        graphNode3.getNeighbours().add(graphNode2);
+        graphNode1.addNeighbour(graphNode2);
+        graphNode1.addNeighbour(graphNode3);
+        graphNode2.addNeighbour(graphNode3);
 
-        var graph = new Graph(2, Set.of(graphNode1, graphNode2, graphNode3));
+        var graph = new Graph(5, Set.of(graphNode1, graphNode2, graphNode3));
         graphService.save(graph);
 
         var graphOptional = graphService.findById(1);
